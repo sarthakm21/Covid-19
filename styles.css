@@ -1,0 +1,97 @@
+body{
+    background-color: #ffd0d0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+li{
+    width: fit-content;
+}
+
+table{
+    width: fit-content;
+    margin: 30px auto;
+    display: none;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+tr{
+    border-radius: 50px;
+    background-color: honeydew;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+td{
+    padding: 10px 50px;
+    text-align: left;
+    font-size: 20px;
+}
+
+li{
+    margin-top: 5px;
+}
+th{
+    padding: 10px;
+    font-size: 20px;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+    background-repeat: repeat;
+}
+
+input, button{
+    margin: 30px 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+}
+
+.container{
+    text-align: center;
+    padding: 30px;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+}
+
+.head{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: start;
+    padding: 10px 5px;
+}
+
+.head a{
+    color: white;
+    padding: 10px 30px;
+}
+
+.head a:hover{
+    color: gray;
+    text-decoration: none;
+}
+
+#deaths{
+    color: red;
+}
+
+#recovered{
+    color: rgb(17, 211, 17);
+}
+
+.selected{
+    color: rgb(170, 170, 170) !important;
+}
