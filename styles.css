@@ -1,27 +1,41 @@
 body{
     background-color: #ffd0d0;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 1.2;
 }
 
 h1{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 40px;
 }
 
 li{
     width: fit-content;
+    margin: 10px 0;
+    font-weight: 400;
+    text-align: left;
 }
 
 table{
     width: fit-content;
     margin: 30px auto;
     display: none;
-    border-radius: 2px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 tr{
-    border-radius: 50px;
     background-color: honeydew;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 th, td {
@@ -34,9 +48,6 @@ td{
     font-size: 20px;
 }
 
-li{
-    margin-top: 5px;
-}
 th{
     padding: 10px;
     font-size: 20px;
@@ -50,20 +61,24 @@ img{
 
 input, button{
     margin: 30px 10px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px;
     text-decoration: none;
     border: none;
+    font-family: Raleway;
+    font-weight: 500;
+}
+
+button:hover{
+    background-color: rgb(187, 211, 187);
+    cursor: pointer;
 }
 
 .container{
     text-align: center;
     padding: 30px;
-}
-
-.hero{
-    display: flex;
-    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .head{
@@ -77,6 +92,7 @@ input, button{
 .head a{
     color: white;
     padding: 10px 30px;
+    text-decoration: none;
 }
 
 .head a:hover{
@@ -94,4 +110,37 @@ input, button{
 
 .selected{
     color: rgb(170, 170, 170) !important;
+}
+
+@media(max-width: 600px){
+    td{
+        padding: 10px 20px;
+    }
+
+    input, button{
+        padding: 10px;
+        margin: 30px 5px;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    li{
+        text-align: left;
+    }
+}
+
+@media(max-width: 400px){
+    .head a {
+        padding: 10px 10px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    input,button{
+        margin: 10px 5px;
+    }
 }
